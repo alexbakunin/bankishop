@@ -29,7 +29,7 @@
     <tr>
         <td><?= $image->name ?></td>
         <td><?= date( 'd.m.y H:i', strtotime($image->created_at) ) ?></td>
-        <td><a target="_blank" href="<?= "upload/{$image->name}" ?>">
+        <td><a target="_blank" href='<?= \yii\helpers\Url::to(["@web/upload/{$image->name}"]) ?>'>
                 <?= yii\helpers\Html::img("@web/upload/{$image->name}", ['class' => 'thumbnail']) ?>
             </a></td>
     </tr>

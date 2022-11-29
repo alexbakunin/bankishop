@@ -9,8 +9,6 @@
             <option value="<?= \yii\helpers\Url::to(['view?sort=namedown']) ?>" <?= ($selected=='namedown') ? 'selected' : null; ?>>Названию Z-A</option>
             <option value="<?= \yii\helpers\Url::to(['view?sort=dateup']) ?>" <?= ($selected=='dateup') ? 'selected' : null; ?>>Дате загрузки ▲</option>
             <option value="<?= \yii\helpers\Url::to(['view?sort=datedown']) ?>" <?= ($selected=='datedown') ? 'selected' : null; ?>>Дате загрузки ▼</option>
-            <!--<option value="price-up" selected="">Цене (по возрастанию)▲</option>
-            <option value="price-down">Цене (по убыванию)▼</option>-->
         </select>
     </div>
 </div>

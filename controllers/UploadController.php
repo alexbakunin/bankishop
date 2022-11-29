@@ -44,8 +44,8 @@ class UploadController extends Controller
                         $model->name = $file_name;
                     }
                     $dir = 'upload/';
-                    if(!is_dir($dir)){      // если нет такой директории
-                        mkdir($dir);        // то создаём её
+                    if(!is_dir($dir)){
+                        mkdir($dir);
                     }
                     $file->saveAs($dir . $file_name);
 
